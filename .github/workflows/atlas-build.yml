@@ -6,6 +6,11 @@ on:
     branches:
       - atlas-build
 
+permissions:
+  contents: write
+  actions: write
+  checks: write
+
 jobs:
   build-branded-windows:
     uses: ./.github/workflows/flutter-build.yml
