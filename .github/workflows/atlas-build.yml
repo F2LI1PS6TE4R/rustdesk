@@ -2,9 +2,6 @@ name: Atlas Connect Build
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - atlas-build
 
 permissions:
   contents: write

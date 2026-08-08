@@ -3035,8 +3035,10 @@ int versionCmp(String v1, String v2) {
   return bind.versionToNumber(v: v1) - bind.versionToNumber(v: v2);
 }
 
+const String kDisplayAppName = 'Atlas Connect';
+
 String getWindowName({WindowType? overrideType}) {
-  final name = bind.mainGetAppNameSync();
+  final name = kDisplayAppName;
   switch (overrideType ?? kWindowType) {
     case WindowType.Main:
       return name;
