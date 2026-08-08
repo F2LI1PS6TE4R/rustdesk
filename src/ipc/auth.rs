@@ -1025,11 +1025,11 @@ mod tests {
     #[cfg(target_os = "macos")]
     fn test_os_str_eq_ignore_ascii_case_for_process_names() {
         assert!(super::os_str_eq_ignore_ascii_case(
-            Some(std::ffi::OsStr::new("RustDesk")),
+            Some(std::ffi::OsStr::new("AtlasConnect")),
             Some(std::ffi::OsStr::new("rustdesk"))
         ));
         assert!(!super::os_str_eq_ignore_ascii_case(
-            Some(std::ffi::OsStr::new("RustDesk")),
+            Some(std::ffi::OsStr::new("AtlasConnect")),
             Some(std::ffi::OsStr::new("service"))
         ));
     }
