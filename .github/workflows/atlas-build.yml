@@ -1,0 +1,14 @@
+name: Atlas Connect Build
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - atlas-build
+
+jobs:
+  build-branded-windows:
+    uses: ./.github/workflows/flutter-build.yml
+    with:
+      upload-artifact: true
+      upload-tag: "atlas-connect"
