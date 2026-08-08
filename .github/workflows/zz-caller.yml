@@ -1,0 +1,7 @@
+name: zz-caller
+on: workflow_dispatch
+jobs:
+  c:
+    uses: ./.github/workflows/zz-reusable.yml
+    with:
+      msg: "atlas works"
